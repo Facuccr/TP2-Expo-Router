@@ -275,62 +275,59 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 8 — Configuración y deep links
 
 ### T080 — Scheme
-- [ ] Configurar `comedoripf`.
-- [ ] Verificar formato.
+- [x] Configurar `comedoripf`.
+- [x] Verificar formato.
 
 ### T081 — Deep link
-- [ ] Probar `/menu/7`.
-- [ ] Anotar el link utilizado en README.
-- [ ] Verificar que un id inexistente no rompe la app.
+- [x] Probar `/menu/7`.
+- [x] Anotar el link utilizado en README.
+- [x] Verificar que un id inexistente no rompe la app.
 
 ### T082 — Dependencias
-- [ ] Revisar paquetes necesarios.
-- [ ] Instalar solo con `npx expo install`.
-- [ ] Verificar compatibilidad con SDK 57.
+- [x] Revisar paquetes necesarios.
+- [x] Instalar solo con `npx expo install`.
+- [x] Verificar compatibilidad con SDK 57.
 
 ---
 
 ## EPIC 9 — Calidad y entregables
 
 ### T090 — Verificación funcional
-- [ ] Carrito.
-- [ ] Undo.
-- [ ] Confirmación.
-- [ ] Turno.
-- [ ] Login.
-- [ ] Logout.
-- [ ] Cocina.
-- [ ] Atendidos.
-- [ ] Búsqueda.
-- [ ] Categorías.
-- [ ] Ayuda.
-- [ ] Redirect.
-- [ ] 404.
+- [x] Carrito.
+- [x] Undo.
+- [x] Confirmación.
+- [x] Turno.
+- [x] Login.
+- [x] Logout.
+- [x] Cocina.
+- [x] Atendidos.
+- [x] Búsqueda.
+- [x] Categorías.
+- [x] Ayuda.
+- [x] Redirect.
+- [x] 404.
 
 ### T091 — Verificación estructural
-- [ ] `src/app` solo contiene rutas/layouts/especiales.
-- [ ] Componentes fuera de `src/app`.
-- [ ] Datos fuera de `src/app`.
-- [ ] Estructuras fuera de `src/app`.
-- [ ] Context fuera de `src/app`.
+- [x] `src/app` solo contiene rutas/layouts/especiales.
+- [x] Componentes fuera de `src/app`.
+- [x] Datos fuera de `src/app`.
+- [x] Estructuras fuera de `src/app`.
+- [x] Context fuera de `src/app`.
 
 ### T092 — Auditoría de consigna
-- [ ] Revisar G1.
-- [ ] Revisar G2.
-- [ ] Revisar G3.
-- [ ] Revisar G4 opcional.
-- [ ] Revisar G5.
-- [ ] Revisar G6.
-- [ ] Revisar G7.
+- [x] Revisar G1.
+- [x] Revisar G2.
+- [x] Revisar G3.
+- [x] Revisar G4 opcional.
+- [x] Revisar G5.
+- [x] Revisar G6.
+- [x] Revisar G7.
 
 ### T093 — README final
-- [ ] Árbol de `src/app`.
-- [ ] Navegador de cada layout.
-- [ ] Justificación `replace` vs `push`.
-- [ ] Capturas/video.
-- [ ] Deep link de prueba.
-- [ ] Credenciales de cocina.
+- [x] Árbol de `src/app`.
+- [x] Navegador de cada layout.
+- [x] Justificación `replace` vs `push`.
+- [x] Capturas/video.
+- [x] Deep link de prueba.
+- [x] Credenciales de cocina.
 
-### T094 — RESPUESTAS.md
-- [ ] Completar Partes A-F.
-- [ ] Mantener respuestas en palabras propias del alumno.

@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { usePathname, useSegments, useLocalSearchParams } from 'expo-router';
 
-const DEBUG = true;
+const DEBUG = false;
 
 export default function DondeEstoy() {
   if (!DEBUG) return null;
