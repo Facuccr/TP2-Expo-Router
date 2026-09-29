@@ -13,29 +13,29 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 0 — Preparación
 
 ### T001 — Inspección del template Expo
-- [ ] Confirmar que el proyecto corre.
-- [ ] Confirmar Expo SDK 57.
-- [ ] Confirmar TypeScript.
-- [ ] Confirmar Expo Router.
-- [ ] Revisar scripts disponibles.
-- [ ] No cambiar dependencias todavía.
+- [x] Confirmar que el proyecto corre.
+- [x] Confirmar Expo SDK 57.
+- [x] Confirmar TypeScript.
+- [x] Confirmar Expo Router.
+- [x] Revisar scripts disponibles.
+- [x] No cambiar dependencias todavía.
 
 **Aceptación:** el proyecto es ejecutable y su configuración se entiende.
 
 ### T002 — Limpieza del template automático
-- [ ] Detectar rutas/demo generadas por create-expo-app.
-- [ ] Eliminar las pantallas demo que serán reemplazadas.
-- [ ] Eliminar componentes demo que no se reutilizarán.
-- [ ] Mantener configuración.
-- [ ] Mantener assets necesarios.
-- [ ] No instalar dependencias.
+- [x] Detectar rutas/demo generadas por create-expo-app.
+- [x] Eliminar las pantallas demo que serán reemplazadas.
+- [x] Eliminar componentes demo que no se reutilizarán.
+- [x] Mantener configuración.
+- [x] Mantener assets necesarios.
+- [x] No instalar dependencias.
 
 **Aceptación:** queda una base limpia sin pantallas demo innecesarias.
 
 ### T003 — Activar estructura `src/app`
-- [ ] Crear `src/app`.
-- [ ] Asegurar que Expo Router detecta la nueva estructura.
-- [ ] Crear los layouts base.
+- [x] Crear `src/app`.
+- [x] Asegurar que Expo Router detecta la nueva estructura.
+- [x] Crear los layouts base.
 
 **Aceptación:** una ruta mínima ubicada en `src/app` puede ejecutarse.
 
@@ -44,36 +44,36 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 1 — Datos y estructuras
 
 ### T010 — Modelo de datos
-- [ ] Crear tipos `Categoria`, `Plato`, `CartItem`, `Pedido`, `UndoAction`.
-- [ ] Centralizar tipos compartidos.
+- [x] Crear tipos `Categoria`, `Plato`, `CartItem`, `Pedido`, `UndoAction`.
+- [x] Centralizar tipos compartidos.
 
 ### T011 — Datos de platos
-- [ ] Crear `src/data/platos.ts`.
-- [ ] Agregar mínimo 12 platos.
-- [ ] Repartirlos en las cuatro categorías.
-- [ ] IDs únicos.
+- [x] Crear `src/data/platos.ts`.
+- [x] Agregar mínimo 12 platos.
+- [x] Repartirlos en las cuatro categorías.
+- [x] IDs únicos.
 
 ### T012 — Clase Pila
-- [ ] Campo privado `#items`.
-- [ ] `push`.
-- [ ] `pop`.
-- [ ] `tope`.
-- [ ] `vacia`.
-- [ ] `tamanio`.
-- [ ] `aArray` como copia.
+- [x] Campo privado `#items`.
+- [x] `push`.
+- [x] `pop`.
+- [x] `tope`.
+- [x] `vacia`.
+- [x] `tamanio`.
+- [x] `aArray` como copia.
 
 **Aceptación:** cumple LIFO y no expone el array interno.
 
 ### T013 — Clase Cola
-- [ ] Campo privado `#items`.
-- [ ] Campo privado para el frente.
-- [ ] `encolar`.
-- [ ] `desencolar`.
-- [ ] `frente`.
-- [ ] `vacia`.
-- [ ] `tamanio`.
-- [ ] `aArray`.
-- [ ] No usar `shift`.
+- [x] Campo privado `#items`.
+- [x] Campo privado para el frente.
+- [x] `encolar`.
+- [x] `desencolar`.
+- [x] `frente`.
+- [x] `vacia`.
+- [x] `tamanio`.
+- [x] `aArray`.
+- [x] No usar `shift`.
 
 **Aceptación:** cumple FIFO.
 
