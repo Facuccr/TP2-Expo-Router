@@ -224,27 +224,27 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 6 — Cocina
 
 ### T060 — Login
-- [ ] Usuario.
-- [ ] Clave.
-- [ ] Credenciales fijas.
-- [ ] Establecer sesión.
-- [ ] Verificar que modal desaparece.
+- [x] Usuario.
+- [x] Clave.
+- [x] Credenciales fijas.
+- [x] Establecer sesión.
+- [x] Verificar que modal desaparece.
 
 ### T061 — Cocina
-- [ ] Mostrar frente.
-- [ ] Mostrar cantidad en espera.
-- [ ] Atender siguiente.
-- [ ] Mostrar estado sin pedidos.
+- [x] Mostrar frente.
+- [x] Mostrar cantidad en espera.
+- [x] Atender siguiente.
+- [x] Mostrar estado sin pedidos.
 
 ### T062 — Atendidos
-- [ ] Obtener Pila.
-- [ ] Mostrar tope primero.
-- [ ] Mostrar datos del pedido.
+- [x] Obtener Pila.
+- [x] Mostrar tope primero.
+- [x] Mostrar datos del pedido.
 
 ### T063 — Logout
-- [ ] Cerrar sesión.
-- [ ] Verificar que cocina desaparece.
-- [ ] Verificar que historial protegido tampoco es accesible.
+- [x] Cerrar sesión.
+- [x] Verificar que cocina desaparece.
+- [x] Verificar que historial protegido tampoco es accesible.
 
 ---
 
