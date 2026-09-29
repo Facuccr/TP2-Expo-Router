@@ -122,36 +122,36 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 3 — Layout raíz y navegación
 
 ### T030 — Root Stack
-- [ ] `GestureHandlerRootView`.
-- [ ] `Stack`.
-- [ ] `(tabs)`.
-- [ ] `anchor`.
-- [ ] `confirmar` modal.
+- [x] `GestureHandlerRootView`.
+- [x] `Stack`.
+- [x] `(tabs)`.
+- [x] `anchor`.
+- [x] `confirmar` modal.
 
 ### T031 — Tabs
-- [ ] Importar Tabs desde `expo-router/js-tabs`.
-- [ ] Inicio.
-- [ ] Menú.
-- [ ] Carrito.
-- [ ] Iconos de `@expo/vector-icons`.
+- [x] Importar Tabs desde `expo-router/js-tabs`.
+- [x] Inicio.
+- [x] Menú.
+- [x] Carrito.
+- [x] Iconos de `@expo/vector-icons`.
 
 ### T032 — Stack Menú
-- [ ] `/menu`.
-- [ ] `/menu/[id]`.
+- [x] `/menu`.
+- [x] `/menu/[id]`.
 
 ### T033 — Stack Carrito
-- [ ] `/carrito`.
-- [ ] `/carrito/nota`.
+- [x] `/carrito`.
+- [x] `/carrito/nota`.
 
 ### T034 — Drawer Cocina
-- [ ] Importar Drawer desde `expo-router/drawer`.
-- [ ] `/cocina`.
-- [ ] `/cocina/atendidos`.
+- [x] Importar Drawer desde `expo-router/drawer`.
+- [x] `/cocina`.
+- [x] `/cocina/atendidos`.
 
 ### T035 — Protected
-- [ ] Guard para cocina.
-- [ ] Guard inverso para login.
-- [ ] Verificar desaparición tras logout.
+- [x] Guard para cocina.
+- [x] Guard inverso para login.
+- [x] Verificar desaparición tras logout.
 
 ---
 

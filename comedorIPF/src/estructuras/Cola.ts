@@ -10,8 +10,7 @@ export class Cola<T> {
     if (this.vacia) return undefined;
     const item = this.#items[this.#frente];
     this.#frente++;
-    // Opcional: limpieza de memoria si la cola crece mucho (no requerido por spec, 
-    // pero buena práctica, sin embargo la consigna pide estrictamente usar #frente y no usar shift)
+    // limpieza de memoria si la cola crece mucho
     return item;
   }
 
