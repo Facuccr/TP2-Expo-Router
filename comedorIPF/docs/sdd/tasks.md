@@ -158,37 +158,37 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 4 — Pantallas de consulta
 
 ### T040 — Inicio
-- [ ] Saludo.
-- [ ] Accesos a Menú, Buscar, Ayuda y Cocina.
+- [x] Saludo.
+- [x] Accesos a Menú, Buscar, Ayuda y Cocina.
 
 ### T041 — Menú
-- [ ] Agrupar o presentar platos por categoría.
-- [ ] Link a detalle.
+- [x] Agrupar o presentar platos por categoría.
+- [x] Link a detalle.
 
 ### T042 — Detalle de plato
-- [ ] Validar id.
-- [ ] Mostrar nombre.
-- [ ] Mostrar precio.
-- [ ] Mostrar descripción.
-- [ ] Agregar al carrito.
-- [ ] Header con nombre.
+- [x] Validar id.
+- [x] Mostrar nombre.
+- [x] Mostrar precio.
+- [x] Mostrar descripción.
+- [x] Agregar al carrito.
+- [x] Header con nombre.
 
 ### T043 — Categoría
-- [ ] Validar categoría.
-- [ ] Mostrar platos.
-- [ ] Mostrar error si no existe.
+- [x] Validar categoría.
+- [x] Mostrar platos.
+- [x] Mostrar error si no existe.
 
 ### T044 — Buscador
-- [ ] Leer `q`.
-- [ ] Leer `categoria`.
-- [ ] Filtrar.
-- [ ] Actualizar URL con `router.setParams`.
-- [ ] Crear Link compartible.
+- [x] Leer `q`.
+- [x] Leer `categoria`.
+- [x] Filtrar.
+- [x] Actualizar URL con `router.setParams`.
+- [x] Crear Link compartible.
 
 ### T045 — Ayuda
-- [ ] Índice.
-- [ ] Catch-all.
-- [ ] Mostrar contenido según slug.
+- [x] Índice.
+- [x] Catch-all.
+- [x] Mostrar contenido según slug.
 
 ---
 
