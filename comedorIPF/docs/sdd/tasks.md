@@ -195,29 +195,29 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 5 — Carrito y pedido
 
 ### T050 — Carrito
-- [ ] Lista.
-- [ ] Total.
-- [ ] Badge.
-- [ ] Deshacer.
-- [ ] Acceso a nota.
-- [ ] Confirmación.
+- [x] Lista.
+- [x] Total.
+- [x] Badge.
+- [x] Deshacer.
+- [x] Acceso a nota.
+- [x] Confirmación.
 
 ### T051 — Nota
-- [ ] Editar nota.
-- [ ] Conservarla en Context.
+- [x] Editar nota.
+- [x] Conservarla en Context.
 
 ### T052 — Confirmar
-- [ ] Modal.
-- [ ] Resumen.
-- [ ] Botón confirmar.
-- [ ] Crear pedido.
-- [ ] `router.replace`.
+- [x] Modal.
+- [x] Resumen.
+- [x] Botón confirmar.
+- [x] Crear pedido.
+- [x] `router.replace`.
 
 ### T053 — Turno
-- [ ] Recibir número.
-- [ ] Mostrar número.
-- [ ] Calcular pedidos adelante.
-- [ ] Manejar pedido no encontrado.
+- [x] Recibir número.
+- [x] Mostrar número.
+- [x] Calcular pedidos adelante.
+- [x] Manejar pedido no encontrado.
 
 ---
 
