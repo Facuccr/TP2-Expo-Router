@@ -1,3 +1,4 @@
+import DondeEstoy from '../components/DondeEstoy';
 import { View, Text, TextInput, FlatList, StyleSheet } from 'react-native';
 import { useLocalSearchParams, router, Link } from 'expo-router';
 import { platos } from '../data/platos';
@@ -41,6 +42,7 @@ export default function BuscarScreen() {
           </View>
         )}
       />
+      <DondeEstoy />
     </View>
   );
 }

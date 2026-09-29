@@ -1,3 +1,4 @@
+import DondeEstoy from '../../../components/DondeEstoy';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useLocalSearchParams, Stack } from 'expo-router';
 import { platos } from '../../../data/platos';
@@ -15,9 +16,10 @@ export default function MenuDetalle() {
       <View style={styles.container}>
         <Stack.Screen options={{ title: 'No encontrado' }} />
         <Text style={styles.error}>Plato no encontrado.</Text>
-      </View>
-    );
-  }
+        <DondeEstoy />
+    </View>
+  );
+}
 
   return (
     <View style={styles.container}>

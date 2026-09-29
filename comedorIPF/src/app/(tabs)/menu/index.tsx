@@ -1,3 +1,4 @@
+import DondeEstoy from '../../../components/DondeEstoy';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 import { platos } from '../../../data/platos';
@@ -19,6 +20,7 @@ export default function MenuIndex() {
         keyExtractor={p => p.id.toString()}
         renderItem={renderItem}
       />
+      <DondeEstoy />
     </View>
   );
 }

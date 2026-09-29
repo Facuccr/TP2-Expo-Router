@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { useAppContext } from '../../context/AppContext';
 import { Pedido } from '../../context/types';
@@ -30,6 +31,7 @@ export default function CocinaAtendidos() {
           renderItem={renderItem}
         />
       )}
+      <DondeEstoy />
     </View>
   );
 }

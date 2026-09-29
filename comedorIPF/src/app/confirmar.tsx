@@ -1,3 +1,4 @@
+import DondeEstoy from '../components/DondeEstoy';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
 import { useAppContext } from '../context/AppContext';
@@ -40,6 +41,7 @@ export default function Confirmar() {
         <View style={{ height: 10 }} />
         <Button title="Cancelar y volver" color="gray" onPress={() => router.back()} />
       </View>
+      <DondeEstoy />
     </View>
   );
 }

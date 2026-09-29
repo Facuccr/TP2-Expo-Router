@@ -1,3 +1,4 @@
+import DondeEstoy from '../../../components/DondeEstoy';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
 import { useAppContext } from '../../../context/AppContext';
@@ -17,6 +18,7 @@ export default function CarritoNota() {
         placeholder="Ej: Sin sal, extra queso..."
       />
       <Button title="Guardar nota" onPress={() => router.back()} />
+      <DondeEstoy />
     </View>
   );
 }

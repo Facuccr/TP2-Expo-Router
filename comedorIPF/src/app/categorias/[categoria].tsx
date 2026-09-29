@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { useLocalSearchParams, Link } from 'expo-router';
 import { platos } from '../../data/platos';
@@ -12,9 +13,10 @@ export default function CategoriaScreen() {
     return (
       <View style={styles.container}>
         <Text style={styles.error}>Categoría inválida.</Text>
-      </View>
-    );
-  }
+        <DondeEstoy />
+    </View>
+  );
+}
 
   const filtrados = platos.filter(p => p.categoria === categoria);
 

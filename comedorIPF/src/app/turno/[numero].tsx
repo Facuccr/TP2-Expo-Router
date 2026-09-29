@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { useLocalSearchParams, router } from 'expo-router';
 import { useAppContext } from '../../context/AppContext';
@@ -46,6 +47,7 @@ export default function Turno() {
       <View style={styles.footer}>
         <Button title="Ir al Inicio" onPress={() => router.replace('/')} />
       </View>
+      <DondeEstoy />
     </View>
   );
 }

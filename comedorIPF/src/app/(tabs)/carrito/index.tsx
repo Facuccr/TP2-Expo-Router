@@ -1,3 +1,4 @@
+import DondeEstoy from '../../../components/DondeEstoy';
 import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
 import { useAppContext } from '../../../context/AppContext';
@@ -47,6 +48,7 @@ export default function CarritoIndex() {
           </View>
         </>
       )}
+      <DondeEstoy />
     </View>
   );
 }

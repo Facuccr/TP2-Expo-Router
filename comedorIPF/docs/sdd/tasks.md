@@ -251,24 +251,24 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 7 — Rutas especiales
 
 ### T070 — Redirect legado
-- [ ] `/pedido` → `/carrito`.
+- [x] `/pedido` → `/carrito`.
 
 ### T071 — 404
-- [ ] `+not-found.tsx`.
-- [ ] Mostrar URL inexistente.
+- [x] `+not-found.tsx`.
+- [x] Mostrar URL inexistente.
 
 ### T072 — DondeEstoy
-- [ ] Crear componente.
-- [ ] Mostrar pathname.
-- [ ] Mostrar segments.
-- [ ] Mostrar params.
-- [ ] Insertar al final de cada pantalla.
-- [ ] Respetar `DEBUG`.
+- [x] Crear componente.
+- [x] Mostrar pathname.
+- [x] Mostrar segments.
+- [x] Mostrar params.
+- [x] Insertar al final de cada pantalla.
+- [x] Respetar `DEBUG`.
 
 ### T073 — Typed routes
-- [ ] Activar.
-- [ ] Corregir todos los href.
-- [ ] No usar rutas inexistentes.
+- [x] Activar.
+- [x] Corregir todos los href.
+- [x] No usar rutas inexistentes.
 
 ---
 

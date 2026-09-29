@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, Button, StyleSheet } from 'react-native';
 import { router } from 'expo-router';
 import { useAppContext } from '../../context/AppContext';
@@ -45,6 +46,7 @@ export default function CocinaIndex() {
           <Text style={styles.emptyText}>No hay pedidos en espera.</Text>
         </View>
       )}
+      <DondeEstoy />
     </View>
   );
 }

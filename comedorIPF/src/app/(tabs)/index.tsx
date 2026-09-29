@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 
@@ -10,6 +11,7 @@ export default function InicioTab() {
       <Link href="/buscar" style={styles.link}>Buscar Platos</Link>
       <Link href="/ayuda" style={styles.link}>Ayuda</Link>
       <Link href="/login" style={styles.link}>Acceso Cocina</Link>
+      <DondeEstoy />
     </View>
   );
 }

@@ -1,3 +1,4 @@
+import DondeEstoy from '../components/DondeEstoy';
 import { View, Text, TextInput, Button, StyleSheet, Alert } from 'react-native';
 import { useState } from 'react';
 import { router } from 'expo-router';
@@ -38,6 +39,7 @@ export default function Login() {
       <Button title="Ingresar" onPress={handleLogin} />
       <View style={styles.spacer} />
       <Button title="Cancelar" color="gray" onPress={() => router.back()} />
+      <DondeEstoy />
     </View>
   );
 }

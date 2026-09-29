@@ -1,3 +1,4 @@
+import DondeEstoy from '../../components/DondeEstoy';
 import { View, Text, StyleSheet } from 'react-native';
 import { useLocalSearchParams } from 'expo-router';
 
@@ -10,6 +11,7 @@ export default function AyudaSlug() {
       <Text style={styles.title}>Artículo de ayuda</Text>
       <Text style={styles.content}>Ruta solicitada: {path}</Text>
       <Text style={styles.desc}>Aquí se mostraría el contenido de este artículo específico.</Text>
+      <DondeEstoy />
     </View>
   );
 }
