@@ -82,38 +82,38 @@ No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
 ## EPIC 2 — Estado global
 
 ### T020 — Tipos del Context
-- [ ] Definir estado y acciones.
-- [ ] Definir tipos de contexto.
+- [x] Definir estado y acciones.
+- [x] Definir tipos de contexto.
 
 ### T021 — AppProvider
-- [ ] Sesión.
-- [ ] Carrito.
-- [ ] Cola.
-- [ ] Pila de undo.
-- [ ] Pila de atendidos.
-- [ ] Número correlativo.
-- [ ] Nota.
-- [ ] mecanismo de actualización de UI.
+- [x] Sesión.
+- [x] Carrito.
+- [x] Cola.
+- [x] Pila de undo.
+- [x] Pila de atendidos.
+- [x] Número correlativo.
+- [x] Nota.
+- [x] mecanismo de actualización de UI.
 
 ### T022 — Operaciones de carrito
-- [ ] Agregar plato.
-- [ ] Registrar undo.
-- [ ] Deshacer.
-- [ ] Calcular cantidad.
-- [ ] Calcular total.
-- [ ] Vaciar tras confirmación.
+- [x] Agregar plato.
+- [x] Registrar undo.
+- [x] Deshacer.
+- [x] Calcular cantidad.
+- [x] Calcular total.
+- [x] Vaciar tras confirmación.
 
 ### T023 — Operaciones de pedido
-- [ ] Crear número correlativo.
-- [ ] Copiar snapshot del carrito.
-- [ ] Encolar.
-- [ ] Guardar nota.
+- [x] Crear número correlativo.
+- [x] Copiar snapshot del carrito.
+- [x] Encolar.
+- [x] Guardar nota.
 
 ### T024 — Operaciones de cocina
-- [ ] Obtener frente.
-- [ ] Atender siguiente.
-- [ ] Apilar atendido.
-- [ ] Consultar historial.
+- [x] Obtener frente.
+- [x] Atender siguiente.
+- [x] Apilar atendido.
+- [x] Consultar historial.
 
 **Aceptación:** una única instancia lógica de Cola/Pila vive en el provider.
 
