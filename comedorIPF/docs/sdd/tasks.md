@@ -1,0 +1,336 @@
+# Tareas de implementación — Comedor IPF
+
+Estados:
+- `[ ]` pendiente
+- `[~]` en progreso
+- `[x]` terminado
+- `[!]` bloqueado
+
+No marcar una tarea como `[x]` si no pasó sus criterios de aceptación.
+
+---
+
+## EPIC 0 — Preparación
+
+### T001 — Inspección del template Expo
+- [ ] Confirmar que el proyecto corre.
+- [ ] Confirmar Expo SDK 57.
+- [ ] Confirmar TypeScript.
+- [ ] Confirmar Expo Router.
+- [ ] Revisar scripts disponibles.
+- [ ] No cambiar dependencias todavía.
+
+**Aceptación:** el proyecto es ejecutable y su configuración se entiende.
+
+### T002 — Limpieza del template automático
+- [ ] Detectar rutas/demo generadas por create-expo-app.
+- [ ] Eliminar las pantallas demo que serán reemplazadas.
+- [ ] Eliminar componentes demo que no se reutilizarán.
+- [ ] Mantener configuración.
+- [ ] Mantener assets necesarios.
+- [ ] No instalar dependencias.
+
+**Aceptación:** queda una base limpia sin pantallas demo innecesarias.
+
+### T003 — Activar estructura `src/app`
+- [ ] Crear `src/app`.
+- [ ] Asegurar que Expo Router detecta la nueva estructura.
+- [ ] Crear los layouts base.
+
+**Aceptación:** una ruta mínima ubicada en `src/app` puede ejecutarse.
+
+---
+
+## EPIC 1 — Datos y estructuras
+
+### T010 — Modelo de datos
+- [ ] Crear tipos `Categoria`, `Plato`, `CartItem`, `Pedido`, `UndoAction`.
+- [ ] Centralizar tipos compartidos.
+
+### T011 — Datos de platos
+- [ ] Crear `src/data/platos.ts`.
+- [ ] Agregar mínimo 12 platos.
+- [ ] Repartirlos en las cuatro categorías.
+- [ ] IDs únicos.
+
+### T012 — Clase Pila
+- [ ] Campo privado `#items`.
+- [ ] `push`.
+- [ ] `pop`.
+- [ ] `tope`.
+- [ ] `vacia`.
+- [ ] `tamanio`.
+- [ ] `aArray` como copia.
+
+**Aceptación:** cumple LIFO y no expone el array interno.
+
+### T013 — Clase Cola
+- [ ] Campo privado `#items`.
+- [ ] Campo privado para el frente.
+- [ ] `encolar`.
+- [ ] `desencolar`.
+- [ ] `frente`.
+- [ ] `vacia`.
+- [ ] `tamanio`.
+- [ ] `aArray`.
+- [ ] No usar `shift`.
+
+**Aceptación:** cumple FIFO.
+
+---
+
+## EPIC 2 — Estado global
+
+### T020 — Tipos del Context
+- [ ] Definir estado y acciones.
+- [ ] Definir tipos de contexto.
+
+### T021 — AppProvider
+- [ ] Sesión.
+- [ ] Carrito.
+- [ ] Cola.
+- [ ] Pila de undo.
+- [ ] Pila de atendidos.
+- [ ] Número correlativo.
+- [ ] Nota.
+- [ ] mecanismo de actualización de UI.
+
+### T022 — Operaciones de carrito
+- [ ] Agregar plato.
+- [ ] Registrar undo.
+- [ ] Deshacer.
+- [ ] Calcular cantidad.
+- [ ] Calcular total.
+- [ ] Vaciar tras confirmación.
+
+### T023 — Operaciones de pedido
+- [ ] Crear número correlativo.
+- [ ] Copiar snapshot del carrito.
+- [ ] Encolar.
+- [ ] Guardar nota.
+
+### T024 — Operaciones de cocina
+- [ ] Obtener frente.
+- [ ] Atender siguiente.
+- [ ] Apilar atendido.
+- [ ] Consultar historial.
+
+**Aceptación:** una única instancia lógica de Cola/Pila vive en el provider.
+
+---
+
+## EPIC 3 — Layout raíz y navegación
+
+### T030 — Root Stack
+- [ ] `GestureHandlerRootView`.
+- [ ] `Stack`.
+- [ ] `(tabs)`.
+- [ ] `anchor`.
+- [ ] `confirmar` modal.
+
+### T031 — Tabs
+- [ ] Importar Tabs desde `expo-router/js-tabs`.
+- [ ] Inicio.
+- [ ] Menú.
+- [ ] Carrito.
+- [ ] Iconos de `@expo/vector-icons`.
+
+### T032 — Stack Menú
+- [ ] `/menu`.
+- [ ] `/menu/[id]`.
+
+### T033 — Stack Carrito
+- [ ] `/carrito`.
+- [ ] `/carrito/nota`.
+
+### T034 — Drawer Cocina
+- [ ] Importar Drawer desde `expo-router/drawer`.
+- [ ] `/cocina`.
+- [ ] `/cocina/atendidos`.
+
+### T035 — Protected
+- [ ] Guard para cocina.
+- [ ] Guard inverso para login.
+- [ ] Verificar desaparición tras logout.
+
+---
+
+## EPIC 4 — Pantallas de consulta
+
+### T040 — Inicio
+- [ ] Saludo.
+- [ ] Accesos a Menú, Buscar, Ayuda y Cocina.
+
+### T041 — Menú
+- [ ] Agrupar o presentar platos por categoría.
+- [ ] Link a detalle.
+
+### T042 — Detalle de plato
+- [ ] Validar id.
+- [ ] Mostrar nombre.
+- [ ] Mostrar precio.
+- [ ] Mostrar descripción.
+- [ ] Agregar al carrito.
+- [ ] Header con nombre.
+
+### T043 — Categoría
+- [ ] Validar categoría.
+- [ ] Mostrar platos.
+- [ ] Mostrar error si no existe.
+
+### T044 — Buscador
+- [ ] Leer `q`.
+- [ ] Leer `categoria`.
+- [ ] Filtrar.
+- [ ] Actualizar URL con `router.setParams`.
+- [ ] Crear Link compartible.
+
+### T045 — Ayuda
+- [ ] Índice.
+- [ ] Catch-all.
+- [ ] Mostrar contenido según slug.
+
+---
+
+## EPIC 5 — Carrito y pedido
+
+### T050 — Carrito
+- [ ] Lista.
+- [ ] Total.
+- [ ] Badge.
+- [ ] Deshacer.
+- [ ] Acceso a nota.
+- [ ] Confirmación.
+
+### T051 — Nota
+- [ ] Editar nota.
+- [ ] Conservarla en Context.
+
+### T052 — Confirmar
+- [ ] Modal.
+- [ ] Resumen.
+- [ ] Botón confirmar.
+- [ ] Crear pedido.
+- [ ] `router.replace`.
+
+### T053 — Turno
+- [ ] Recibir número.
+- [ ] Mostrar número.
+- [ ] Calcular pedidos adelante.
+- [ ] Manejar pedido no encontrado.
+
+---
+
+## EPIC 6 — Cocina
+
+### T060 — Login
+- [ ] Usuario.
+- [ ] Clave.
+- [ ] Credenciales fijas.
+- [ ] Establecer sesión.
+- [ ] Verificar que modal desaparece.
+
+### T061 — Cocina
+- [ ] Mostrar frente.
+- [ ] Mostrar cantidad en espera.
+- [ ] Atender siguiente.
+- [ ] Mostrar estado sin pedidos.
+
+### T062 — Atendidos
+- [ ] Obtener Pila.
+- [ ] Mostrar tope primero.
+- [ ] Mostrar datos del pedido.
+
+### T063 — Logout
+- [ ] Cerrar sesión.
+- [ ] Verificar que cocina desaparece.
+- [ ] Verificar que historial protegido tampoco es accesible.
+
+---
+
+## EPIC 7 — Rutas especiales
+
+### T070 — Redirect legado
+- [ ] `/pedido` → `/carrito`.
+
+### T071 — 404
+- [ ] `+not-found.tsx`.
+- [ ] Mostrar URL inexistente.
+
+### T072 — DondeEstoy
+- [ ] Crear componente.
+- [ ] Mostrar pathname.
+- [ ] Mostrar segments.
+- [ ] Mostrar params.
+- [ ] Insertar al final de cada pantalla.
+- [ ] Respetar `DEBUG`.
+
+### T073 — Typed routes
+- [ ] Activar.
+- [ ] Corregir todos los href.
+- [ ] No usar rutas inexistentes.
+
+---
+
+## EPIC 8 — Configuración y deep links
+
+### T080 — Scheme
+- [ ] Configurar `comedoripf`.
+- [ ] Verificar formato.
+
+### T081 — Deep link
+- [ ] Probar `/menu/7`.
+- [ ] Anotar el link utilizado en README.
+- [ ] Verificar que un id inexistente no rompe la app.
+
+### T082 — Dependencias
+- [ ] Revisar paquetes necesarios.
+- [ ] Instalar solo con `npx expo install`.
+- [ ] Verificar compatibilidad con SDK 57.
+
+---
+
+## EPIC 9 — Calidad y entregables
+
+### T090 — Verificación funcional
+- [ ] Carrito.
+- [ ] Undo.
+- [ ] Confirmación.
+- [ ] Turno.
+- [ ] Login.
+- [ ] Logout.
+- [ ] Cocina.
+- [ ] Atendidos.
+- [ ] Búsqueda.
+- [ ] Categorías.
+- [ ] Ayuda.
+- [ ] Redirect.
+- [ ] 404.
+
+### T091 — Verificación estructural
+- [ ] `src/app` solo contiene rutas/layouts/especiales.
+- [ ] Componentes fuera de `src/app`.
+- [ ] Datos fuera de `src/app`.
+- [ ] Estructuras fuera de `src/app`.
+- [ ] Context fuera de `src/app`.
+
+### T092 — Auditoría de consigna
+- [ ] Revisar G1.
+- [ ] Revisar G2.
+- [ ] Revisar G3.
+- [ ] Revisar G4 opcional.
+- [ ] Revisar G5.
+- [ ] Revisar G6.
+- [ ] Revisar G7.
+
+### T093 — README final
+- [ ] Árbol de `src/app`.
+- [ ] Navegador de cada layout.
+- [ ] Justificación `replace` vs `push`.
+- [ ] Capturas/video.
+- [ ] Deep link de prueba.
+- [ ] Credenciales de cocina.
+
+### T094 — RESPUESTAS.md
+- [ ] Completar Partes A-F.
+- [ ] Mantener respuestas en palabras propias del alumno.
