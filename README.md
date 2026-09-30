@@ -2,7 +2,7 @@
 
 ## 1. Árbol de src/app
 
-\`\`\`
+```text
 src/app/
 ├── (tabs)/
 │   ├── _layout.tsx      (Tabs)
@@ -32,8 +32,7 @@ src/app/
 ├── pedido.tsx           (Redirect)
 └── turno/
     └── [numero].tsx
-\`\`\`
-
+```    
 ## 2. Navegador de cada layout
 
 - **Raíz (`src/app/_layout.tsx`)**: Utiliza un `<Stack>` como contenedor global. En él se declaran como modales (`presentation: 'modal'`) a `confirmar` y `login`. También inyecta condicionalmente la ruta `cocina` dependiendo del estado global, resolviendo de forma segura la protección de rutas solicitada en la consigna.
