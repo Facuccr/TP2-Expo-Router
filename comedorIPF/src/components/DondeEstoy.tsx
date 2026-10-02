@@ -13,7 +13,7 @@ export default function DondeEstoy() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>[DondeEstoy Debug]</Text>
+      <Text style={styles.title}>[DondeEstoy]</Text>
       <Text style={styles.text}>Pathname: {pathname}</Text>
       <Text style={styles.text}>Segments: {JSON.stringify(segments)}</Text>
       <Text style={styles.text}>Params: {JSON.stringify(params)}</Text>

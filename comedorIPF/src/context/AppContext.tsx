@@ -12,7 +12,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const [nextOrderNumber, setNextOrderNumber] = useState(1);
   const [version, setVersion] = useState(0);
 
-  // Mantenemos una única instancia lógica de la Cola y las Pilas usando useRef
+  // se manteine una unica instancia logica de la Cola y las Pilas usando useRef
   const ordersQueueRef = useRef(new Cola<Pedido>());
   const undoStackRef = useRef(new Pila<UndoAction>());
   const attendedStackRef = useRef(new Pila<Pedido>());
@@ -24,7 +24,6 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
   const logout = () => setSession(false);
 
   const agregarAlCarrito = (plato: Plato) => {
-    // Generar ID único para que "deshacer" quite la última adición exacta (D4)
     const instanciaId = Math.random().toString(36).substring(2, 10);
     
     setCartItems((prev) => [...prev, { instanciaId, plato, cantidad: 1 }]);
