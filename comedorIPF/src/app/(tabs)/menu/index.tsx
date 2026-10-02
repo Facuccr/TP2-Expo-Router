@@ -8,7 +8,7 @@ export default function MenuIndex() {
   const renderItem = ({ item }: { item: Plato }) => (
     <View style={styles.card}>
       <Text style={styles.name}>{item.nombre}</Text>
-      <Text style={styles.price}>$${item.precio}</Text>
+      <Text style={styles.price}>${item.precio}</Text>
       <Link href={`/menu/${item.id}`} style={styles.link}>Ver detalle</Link>
     </View>
   );

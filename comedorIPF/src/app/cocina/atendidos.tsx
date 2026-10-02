@@ -13,7 +13,7 @@ export default function CocinaAtendidos() {
       <Text style={styles.pedidoTitle}>Pedido #{item.numero}</Text>
       <Text style={styles.time}>Creado: {new Date(item.creadoEn).toLocaleTimeString()}</Text>
       <Text style={styles.details}>
-        {item.items.length} ítem(s) - Total: $${item.items.reduce((acc, it) => acc + it.plato.precio, 0)}
+        {item.items.length} ítem(s) - Total: ${item.items.reduce((acc, it) => acc + it.plato.precio, 0)}
       </Text>
     </View>
   );

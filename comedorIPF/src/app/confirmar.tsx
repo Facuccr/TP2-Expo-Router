@@ -34,7 +34,7 @@ export default function Confirmar() {
         <Text style={styles.nota}>Nota: {nota}</Text>
       ) : null}
 
-      <Text style={styles.total}>Total a pagar: $${totalCarrito}</Text>
+      <Text style={styles.total}>Total a pagar: ${totalCarrito}</Text>
 
       <View style={styles.buttons}>
         <Button title="Confirmar Pedido" onPress={handleConfirm} />

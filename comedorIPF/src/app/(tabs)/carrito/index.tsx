@@ -18,12 +18,12 @@ export default function CarritoIndex() {
             renderItem={({ item }) => (
               <View style={styles.card}>
                 <Text style={styles.name}>{item.plato.nombre}</Text>
-                <Text style={styles.price}>$${item.plato.precio}</Text>
+                <Text style={styles.price}>${item.plato.precio}</Text>
               </View>
             )}
           />
           <View style={styles.footer}>
-            <Text style={styles.total}>Total: $${totalCarrito}</Text>
+            <Text style={styles.total}>Total: ${totalCarrito}</Text>
             
             <View style={styles.buttonsRow}>
               <Button 

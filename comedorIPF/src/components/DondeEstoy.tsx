@@ -4,7 +4,8 @@ import { usePathname, useSegments, useLocalSearchParams } from 'expo-router';
 const DEBUG = false;
 
 export default function DondeEstoy() {
-  if (!DEBUG) return null;
+  // if (!DEBUG) return null;
+  const DEBUG = true
 
   const pathname = usePathname();
   const segments = useSegments();

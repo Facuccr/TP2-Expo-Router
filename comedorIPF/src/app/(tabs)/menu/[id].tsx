@@ -27,7 +27,7 @@ export default function MenuDetalle() {
       <Text style={styles.title}>{plato.nombre}</Text>
       <Text style={styles.category}>Categoría: {plato.categoria}</Text>
       <Text style={styles.desc}>{plato.descripcion}</Text>
-      <Text style={styles.price}>$${plato.precio}</Text>
+      <Text style={styles.price}>${plato.precio}</Text>
       
       <Button title="Agregar al carrito" onPress={() => agregarAlCarrito(plato)} />
     </View>
